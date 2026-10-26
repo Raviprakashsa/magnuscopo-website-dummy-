@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 interface FooterProps {
@@ -81,15 +81,30 @@ export default function Footer({ onNavigate }: FooterProps) {
             <ul className="space-y-3">
               <li className={`flex items-start gap-2 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
                 <Mail className="w-5 h-5 text-[#14F4FF] flex-shrink-0 mt-0.5" />
-                <span className="text-sm">Marketing@magnuscopo.com</span>
+                <a href="mailto:marketing@magnuscopo.com" className="text-sm hover:text-[#14F4FF] transition-colors">
+                  marketing@magnuscopo.com
+                </a>
               </li>
               <li className={`flex items-start gap-2 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
                 <Phone className="w-5 h-5 text-[#14F4FF] flex-shrink-0 mt-0.5" />
-                <span className="text-sm">+91 7353484031</span>
+                <a href="tel:+917899899691" className="text-sm hover:text-[#14F4FF] transition-colors">
+                  +91 7899899691
+                </a>
               </li>
               <li className={`flex items-start gap-2 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
                 <MapPin className="w-5 h-5 text-[#14F4FF] flex-shrink-0 mt-0.5" />
-                <span className="text-sm">#35 Pai Layout, Bengaluru - 560016</span>
+                <span className="text-sm">Magnuscopo LLP, 8/2, Novel Office, Halsoor Road, Bangalore, Karnataka - 560042</span>
+              </li>
+              <li className={`flex items-start gap-2 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
+                <MessageCircle className="w-5 h-5 text-[#14F4FF] flex-shrink-0 mt-0.5" />
+                <a
+                  href="https://wa.me/+917899899691"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm hover:text-[#14F4FF] transition-colors"
+                >
+                  WhatsApp
+                </a>
               </li>
             </ul>
           </div>
