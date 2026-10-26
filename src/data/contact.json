@@ -1,0 +1,47 @@
+{
+  "title": {
+    "normal": "Get In ",
+    "highlight": "Touch"
+  },
+  "description": "Let's build something extraordinary together. Reach out and start your transformation journey.",
+  "segments": [
+    {
+      "id": "colleges",
+      "label": "Colleges",
+      "icon": "GraduationCap",
+      "color": "#2D8CFF"
+    },
+    {
+      "id": "corporates",
+      "label": "Corporates",
+      "icon": "Briefcase",
+      "color": "#14F4FF"
+    },
+    {
+      "id": "business",
+      "label": "Business Owners",
+      "icon": "Lightbulb",
+      "color": "#8A4FFF"
+    }
+  ],
+  "contactInfo": [
+    {
+      "icon": "Mail",
+      "title": "Email Us",
+      "content": "hello@magnuscopo.com",
+      "link": "mailto:hello@magnuscopo.com"
+    },
+    {
+      "icon": "Phone",
+      "title": "Call Us",
+      "content": "+91 98765 43210",
+      "link": "tel:+919876543210"
+    },
+    {
+      "icon": "MapPin",
+      "title": "Visit Us",
+      "content": "Bangalore, Karnataka, India",
+      "link": "#"
+    }
+  ]
+}

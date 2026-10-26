@@ -1,0 +1,63 @@
+{
+  "badge": "For Corporate Leaders",
+  "title": {
+    "highlight": "Enterprise Hiring",
+    "normal": "& Workforce Solutions"
+  },
+  "description": "AI-driven recruitment, skill assessments, employee upskilling, and comprehensive staffing solutions for forward-thinking organizations.",
+  "solutions": [
+    {
+      "icon": "UserCheck",
+      "title": "AI-Powered Hiring",
+      "description": "Smart recruitment tools with skill-based candidate assessments and automated screening.",
+      "benefits": ["Resume parsing & ranking", "Technical assessments", "Video interview analysis", "Cultural fit evaluation"]
+    },
+    {
+      "icon": "Target",
+      "title": "Skill Evaluations",
+      "description": "Comprehensive technical and soft skill assessments tailored to your requirements.",
+      "benefits": ["Custom test creation", "Proctored assessments", "Detailed analytics", "Benchmark scoring"]
+    },
+    {
+      "icon": "TrendingUp",
+      "title": "Employee Upskilling",
+      "description": "Continuous learning programs to keep your workforce ahead of industry trends.",
+      "benefits": ["Personalized learning paths", "Micro-learning modules", "Certification tracking", "Progress monitoring"]
+    },
+    {
+      "icon": "Users",
+      "title": "Staffing Solutions",
+      "description": "End-to-end staffing pipelines connecting you with pre-vetted, job-ready talent.",
+      "benefits": ["Campus recruitment", "Lateral hiring", "Contract staffing", "Talent pooling"]
+    },
+    {
+      "icon": "Settings",
+      "title": "Corporate Bootcamps",
+      "description": "Intensive training programs designed for rapid skill development in emerging technologies.",
+      "benefits": ["Custom curriculum", "Expert trainers", "Hands-on projects", "Placement support"]
+    },
+    {
+      "icon": "Award",
+      "title": "Consulting Services",
+      "description": "Strategic consulting for talent acquisition, training infrastructure, and HR tech adoption.",
+      "benefits": ["HR process optimization", "Training strategy", "Tech stack evaluation", "ROI analysis"]
+    }
+  ],
+  "offerings": [
+    {
+      "title": "Campus Connect Program",
+      "description": "Direct access to top engineering and management colleges with pre-screened candidates.",
+      "metrics": ["200+ partner campuses", "50,000+ students annually", "85% placement success rate"]
+    },
+    {
+      "title": "Assessment Platform",
+      "description": "Industry-leading platform for technical evaluations, coding tests, and soft skill assessments.",
+      "metrics": ["1M+ assessments conducted", "500+ customizable tests", "AI-proctored security"]
+    },
+    {
+      "title": "Learning Management",
+      "description": "Enterprise LMS for employee training, onboarding, and continuous skill development.",
+      "metrics": ["100+ enterprise clients", "2M+ learning hours", "95% completion rates"]
+    }
+  ]
+}

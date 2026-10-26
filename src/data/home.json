@@ -1,0 +1,162 @@
+{
+  "company": {
+    "name": "Magnus Copo",
+    "tagline": "Your vision our execution",
+    "description": "A futuristic ecosystem merging EdTech, training, placements, corporate hiring, and business solutions.",
+    "email": "hello@magnuscopo.com",
+    "phone": "+91 98765 43210",
+    "location": "Bangalore, Karnataka, India"
+  },
+  "stats": [
+    {
+      "value": 1500000,
+      "label": "Active Users",
+      "suffix": "+"
+    },
+    {
+      "value": 4500,
+      "label": "DSA Problems",
+      "suffix": "+"
+    },
+    {
+      "value": 50,
+      "label": "Live Contests",
+      "suffix": "+"
+    },
+    {
+      "value": 200,
+      "label": "Partner Campuses",
+      "suffix": "+"
+    }
+  ],
+  "features": [
+    {
+      "icon": "Cpu",
+      "title": "AI-Powered LMS",
+      "description": "Intelligent learning management with personalized pathways and adaptive content delivery."
+    },
+    {
+      "icon": "BarChart3",
+      "title": "Real-Time Analytics",
+      "description": "Comprehensive dashboards tracking performance, engagement, and learning outcomes."
+    },
+    {
+      "icon": "Code2",
+      "title": "Coding Ecosystem",
+      "description": "4500+ DSA problems, live contests, and hands-on programming challenges."
+    },
+    {
+      "icon": "Shield",
+      "title": "AI-Proctored Assessments",
+      "description": "Secure, automated proctoring with advanced fraud detection and integrity monitoring."
+    },
+    {
+      "icon": "Rocket",
+      "title": "Skill Development",
+      "description": "Industry-aligned training programs with certification and competency tracking."
+    },
+    {
+      "icon": "TrendingUp",
+      "title": "Placement Outcomes",
+      "description": "End-to-end placement ecosystem connecting talent with opportunities."
+    }
+  ],
+  "tabSections": [
+    {
+      "key": "digital",
+      "title": "Digital Solutions",
+      "description": "A strong digital presence builds trust and drives growth. Magnus Copo helps brands stand out through professional websites, logos, brochures, and smart digital solutions that attract and convert audiences.",
+      "items": [
+        "Web development",
+        "App development",
+        "Custom softwares",
+        "Graphic suite",
+        "Digital marketing"
+      ]
+    },
+    {
+      "key": "edtech",
+      "title": "EdTech Solutions",
+      "description": "AI-powered LMS, industry-aligned training, skill assessments, coding platforms, and performance analytics designed to build job-ready students and improve placement outcomes.",
+      "items": [
+        "AI-powered Learning Management System",
+        "Personalized learning paths with adaptive content",
+        "Interactive coding playground with 4500+ problems",
+        "Live virtual classrooms and webinar platform",
+        "Automated grading and feedback system",
+        "Mobile-first responsive learning experience"
+      ]
+    },
+    {
+      "key": "hiring",
+      "title": "Hiring, Training & Staffing Solutions",
+      "description": "Smart assessments, automated screening, workforce upskilling, and performance insights enable faster hiring and stronger teams. We provide pre-assessed, industry-ready talent, supporting corporates with efficient recruitment while helping colleges achieve placement-driven outcomes.",
+      "items": [
+        "Smart recruitment and talent acquisition",
+        "Skill-based candidate assessments",
+        "Employee upskilling and reskilling programs",
+        "Customized corporate training solutions",
+        "Staffing and consulting services",
+        "Employer branding and campus partnerships"
+      ]
+    }
+  ],
+  "clientLogos": [
+    {
+      "name": "Company 1",
+      "logo": "/Company_1.svg"
+    },
+    {
+      "name": "Company 2",
+      "logo": "/Company_2.svg"
+    },
+    {
+      "name": "Company 3",
+      "logo": "/Company_3.svg"
+    },
+    {
+      "name": "Company 4",
+      "logo": "/Company_4.svg"
+    },
+    {
+      "name": "Company 5",
+      "logo": "/Company_5.svg"
+    },
+    {
+      "name": "Company 6",
+      "logo": "/Company_6.svg"
+    },
+    {
+      "name": "Company 7",
+      "logo": "/Company_7.svg"
+    },
+    {
+      "name": "Company 8",
+      "logo": "/Company_8.svg"
+    },
+    {
+      "name": "Company 9",
+      "logo": "/Company_9.svg"
+    },
+    {
+      "name": "Company 10",
+      "logo": "/Company_10.svg"
+    },
+    {
+      "name": "Company 11",
+      "logo": "/Company_11.svg"
+    },
+    {
+      "name": "Company 12",
+      "logo": "/Company_12.svg"
+    },
+    {
+      "name": "Company 13",
+      "logo": "/Company_13.svg"
+    },
+    {
+      "name": "Company 14",
+      "logo": "/Company_14.svg"
+    }
+  ]
+}

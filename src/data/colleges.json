@@ -1,0 +1,63 @@
+{
+  "badge": "For Educational Institutions",
+  "title": {
+    "highlight": "Transform Campus",
+    "normal": "Learning & Placement"
+  },
+  "description": "A holographic EdTech ecosystem with AI-powered learning, skill tracking, placement support, and comprehensive analytics for modern educational institutions.",
+  "features": [
+    {
+      "icon": "Brain",
+      "title": "AI-Powered LMS",
+      "description": "Intelligent learning management with adaptive content delivery and personalized learning paths.",
+      "highlights": ["Smart content recommendations", "Adaptive assessments", "Learning analytics dashboard", "Mobile-first interface"]
+    },
+    {
+      "icon": "BarChart",
+      "title": "Real-Time Analytics",
+      "description": "Comprehensive dashboards tracking student performance, engagement, and learning outcomes.",
+      "highlights": ["Student progress tracking", "Engagement metrics", "Placement readiness scores", "Custom report generation"]
+    },
+    {
+      "icon": "Target",
+      "title": "Skill Development Tracking",
+      "description": "Monitor and measure skill development across technical and soft skill domains.",
+      "highlights": ["Competency mapping", "Skill gap analysis", "Industry alignment tracking", "Certification management"]
+    },
+    {
+      "icon": "Code",
+      "title": "Coding Ecosystem",
+      "description": "4500+ DSA problems with an interactive coding playground and live contest platform.",
+      "highlights": ["Multi-language support", "Auto-graded submissions", "Plagiarism detection", "Code quality analysis"]
+    },
+    {
+      "icon": "Trophy",
+      "title": "Contests & Hackathons",
+      "description": "Organize coding competitions and hackathons to engage students and identify top talent.",
+      "highlights": ["Live leaderboards", "Custom problem sets", "Team competitions", "Prize management"]
+    },
+    {
+      "icon": "Users",
+      "title": "CRT Training Programs",
+      "description": "Campus Recruitment Training with mock interviews, aptitude tests, and soft skills development.",
+      "highlights": ["Mock interview platform", "AI-powered feedback", "Resume building tools", "Communication training"]
+    }
+  ],
+  "platforms": [
+    {
+      "title": "Student Portal",
+      "description": "Personalized dashboards with course access, progress tracking, and skill development metrics.",
+      "features": ["Course enrollment", "Assignment submission", "Performance analytics", "Placement preparation"]
+    },
+    {
+      "title": "Faculty Portal",
+      "description": "Tools for content creation, student monitoring, and comprehensive analytics.",
+      "features": ["Course management", "Grading automation", "Student insights", "Resource library"]
+    },
+    {
+      "title": "Admin Dashboard",
+      "description": "Institution-wide analytics, placement tracking, and comprehensive reporting.",
+      "features": ["Campus analytics", "Placement outcomes", "Department insights", "ROI tracking"]
+    }
+  ]
+}

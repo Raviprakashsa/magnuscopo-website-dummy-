@@ -1,0 +1,66 @@
+{
+  "badge": "For Visionary Businesses",
+  "title": {
+    "highlight": "Digital Innovation",
+    "normal": "That Drives Growth"
+  },
+  "description": "Full-stack development, creative design, digital marketing, and software solutions that transform ideas into successful digital products.",
+  "services": [
+    {
+      "icon": "Code",
+      "title": "Web & App Development",
+      "description": "Full-stack development services for web applications, mobile apps, and progressive web apps.",
+      "deliverables": ["Custom web applications", "iOS & Android apps", "E-commerce platforms", "SaaS solutions"]
+    },
+    {
+      "icon": "Palette",
+      "title": "UI/UX & Branding",
+      "description": "Design systems, brand identity, and user experiences that captivate and convert.",
+      "deliverables": ["Brand identity design", "UI/UX prototyping", "Design systems", "Marketing collateral"]
+    },
+    {
+      "icon": "Megaphone",
+      "title": "Digital Marketing",
+      "description": "Data-driven marketing strategies to amplify your brand and drive measurable growth.",
+      "deliverables": ["SEO & SEM campaigns", "Social media marketing", "Content strategy", "Performance analytics"]
+    },
+    {
+      "icon": "Cog",
+      "title": "Software Solutions",
+      "description": "Enterprise software, automation tools, and custom integrations tailored to your needs.",
+      "deliverables": ["ERP systems", "CRM solutions", "Workflow automation", "API integrations"]
+    },
+    {
+      "icon": "Lightbulb",
+      "title": "Product Strategy",
+      "description": "From ideation to launch, we help you build products that solve real problems.",
+      "deliverables": ["Market research", "Product roadmapping", "MVP development", "Go-to-market strategy"]
+    },
+    {
+      "icon": "Smartphone",
+      "title": "Mechanical Prototyping",
+      "description": "Hardware prototyping and product design for physical products and IoT solutions.",
+      "deliverables": ["CAD modeling", "3D prototyping", "IoT integration", "Product testing"]
+    }
+  ],
+  "portfolio": [
+    {
+      "title": "EdTech Platform",
+      "category": "Web Application",
+      "description": "Comprehensive learning management system with AI-powered features",
+      "image": "https://images.pexels.com/photos/5905492/pexels-photo-5905492.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "title": "E-Commerce Solution",
+      "category": "Mobile & Web",
+      "description": "Full-featured online marketplace with payment integration",
+      "image": "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "title": "Brand Identity",
+      "category": "Design & Branding",
+      "description": "Complete brand transformation for a tech startup",
+      "image": "https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&cs=tinysrgb&w=800"
+    }
+  ]
+}
