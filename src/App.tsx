@@ -49,12 +49,16 @@ const pageMetadata = {
 };
 
 function getRouteFromLocation() {
-  const path = window.location.pathname.replace(/\/+$/, '') || '/';
+  const normalizePath = (value: string) => {
+    const normalized = value.replace(/\/+$/, '');
+    return normalized || '/';
+  };
+  const path = normalizePath(window.location.pathname);
   const articleMatch = path.match(/^\/blog\/([^/]+)$/);
   if (articleMatch) {
     return { page: 'article', slug: decodeURIComponent(articleMatch[1]) };
   }
-  const route = Object.entries(pageMetadata).find(([, metadata]) => metadata.path.replace(/\/+$/, '') === path);
+  const route = Object.entries(pageMetadata).find(([, metadata]) => normalizePath(metadata.path) === path);
   return { page: route?.[0] || 'not-found', slug: null };
 }
 
