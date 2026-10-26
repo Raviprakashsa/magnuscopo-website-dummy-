@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { ArrowRight, Sparkles } from 'lucide-react';
 import ParticleBackground from './ParticleBackground';
 import { useTheme } from '../context/ThemeContext';
 

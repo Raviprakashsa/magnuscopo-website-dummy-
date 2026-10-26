@@ -567,7 +567,7 @@ export default function BusinessPage({ onNavigate }: BusinessPageProps) {
 
             {/* Mobile Dropdown Cards */}
             <div className="lg:hidden space-y-3">
-              {whyChooseReasons.map((reason, index) => {
+              {whyChooseReasons.map((reason) => {
                 const Icon = reason.icon;
                 const isExpanded = activeCard === reason.id;
                 return (

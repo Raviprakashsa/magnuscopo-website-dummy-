@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Monitor, GraduationCap, Users, Sparkles, Target, Code, Video, Award, Smartphone, FileText, Users2, Briefcase, MessageSquare, TrendingUp, UserCheck, Palette, Globe, Zap } from 'lucide-react';
+import { Monitor, GraduationCap, Users, Sparkles, Target, Code, Award, Smartphone, Users2, Briefcase, TrendingUp, UserCheck, Globe } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 const tabContent = {

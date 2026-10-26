@@ -1,5 +1,3 @@
-import type { CSSProperties } from 'react';
-
 export type Theme = 'light' | 'dark';
 
 export const colors = {

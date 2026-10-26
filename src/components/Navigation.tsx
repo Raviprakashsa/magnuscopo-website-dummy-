@@ -64,9 +64,13 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
 
           <div className="hidden lg:flex items-center space-x-1">
             {navItems.map((item) => (
-              <button
+              <a
                 key={item.value}
-                onClick={() => onNavigate(item.value)}
+                href={item.value === 'home' ? '/' : `/${item.value}/`}
+                onClick={(event) => {
+                  event.preventDefault();
+                  onNavigate(item.value);
+                }}
                 className={`relative px-5 py-2 text-sm font-medium transition-all duration-300 group ${
                   currentPage === item.value
                     ? theme === 'light' ? 'text-[#2D8CFF]' : 'text-[#14F4FF]'
@@ -79,7 +83,7 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
                     currentPage === item.value ? 'w-full' : 'w-0 group-hover:w-full'
                   }`}
                 />
-              </button>
+              </a>
             ))}
           </div>
 
@@ -112,9 +116,11 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
           }`}>
             <div className="px-4 py-6 space-y-3">
             {navItems.map((item) => (
-              <button
+              <a
                 key={item.value}
-                onClick={() => {
+                href={item.value === 'home' ? '/' : `/${item.value}/`}
+                onClick={(event) => {
+                  event.preventDefault();
                   onNavigate(item.value);
                   setIsMobileMenuOpen(false);
                 }}
@@ -127,7 +133,7 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
                 }`}
               >
                 {item.label}
-              </button>
+              </a>
             ))}
             </div>
           </div>

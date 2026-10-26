@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://the360connect.com/sitemap.xml

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Mail, Phone, MapPin, Send, GraduationCap, Briefcase, Lightbulb, Clock } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, GraduationCap, Briefcase, Lightbulb } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 const segments = [
@@ -12,20 +12,20 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email Us',
-    content: 'Marketing@magnuscopo.com',
-    link: 'mailto:Marketing@magnuscopo.com',
+    content: 'marketing@magnuscopo.com',
+    link: 'mailto:marketing@magnuscopo.com',
   },
   {
     icon: Phone,
     title: 'Call Us',
-    content: '+91 7353484031',
-    link: 'tel:+917353484031',
+    content: '+91 7899899691',
+    link: 'tel:+917899899691',
   },
   {
     icon: MapPin,
     title: 'Visit Us',
-    content: '#35 Pai Layout, Bengaluru - 560016',
-    link: '#',
+    content: 'Magnuscopo LLP, 8/2, Novel Office, Halsoor Road, Bangalore, Karnataka - 560042',
+    link: 'https://maps.google.com/?q=Magnuscopo+LLP+8%2F2+Novel+Office+Halsoor+Road+Bangalore+Karnataka+560042',
   },
 ];
 

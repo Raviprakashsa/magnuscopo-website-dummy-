@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Briefcase, UserCheck, TrendingUp, Users, Zap, Target, Settings, Award, Clock, CheckCircle, Layers, Shield as ShieldIcon, GraduationCap, DollarSign, ChevronDown } from 'lucide-react';
+import { Briefcase, UserCheck, TrendingUp, Users, Zap, Target, Settings, Award, Clock, CheckCircle, GraduationCap, DollarSign, ChevronDown } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 const solutions = [
@@ -364,7 +364,7 @@ export default function CorporatesPage() {
 
             {/* Mobile Dropdown Cards */}
             <div className="lg:hidden space-y-3">
-              {whyChooseReasons.map((reason, index) => {
+              {whyChooseReasons.map((reason) => {
                 const Icon = reason.icon;
                 const isExpanded = activeCard === reason.id;
                 return (

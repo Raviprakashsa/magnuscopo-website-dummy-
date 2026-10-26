@@ -23,7 +23,6 @@ interface BlogArticlePageProps {
 export default function BlogArticlePage({ slug, onNavigate }: BlogArticlePageProps) {
   const [article, setArticle] = useState<BlogPost | null>(null);
   const [recommendedPosts, setRecommendedPosts] = useState<BlogPost[]>([]);
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const found = (blogPosts as BlogPost[]).find((post) => post.slug === slug);
@@ -45,18 +44,6 @@ export default function BlogArticlePage({ slug, onNavigate }: BlogArticlePagePro
       day: 'numeric',
     });
   };
-
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-[#0A1A2F] flex items-center justify-center">
-        <div className="text-center">
-          <div className="inline-block">
-            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-[#14F4FF] border-r-transparent" />
-          </div>
-        </div>
-      </div>
-    );
-  }
 
   if (!article) {
     return (

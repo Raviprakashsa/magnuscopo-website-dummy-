@@ -26,7 +26,6 @@ export default function BlogPage({ onNavigate }: BlogPageProps) {
   const [filteredPosts, setFilteredPosts] = useState<BlogPost[]>([]);
   const [selectedCategory, setSelectedCategory] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setPosts(blogPosts as BlogPost[]);
@@ -114,14 +113,7 @@ export default function BlogPage({ onNavigate }: BlogPageProps) {
 
       <section className="relative py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          {loading ? (
-            <div className="text-center py-20">
-              <div className="inline-block">
-                <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-[#14F4FF] border-r-transparent" />
-              </div>
-            </div>
-          ) : (
-            <div className="grid lg:grid-cols-4 gap-8">
+          <div className="grid lg:grid-cols-4 gap-8">
               <div className="lg:col-span-3">
                 {filteredPosts.length > 0 ? (
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -162,7 +154,6 @@ export default function BlogPage({ onNavigate }: BlogPageProps) {
                 onPostClick={(slug) => onNavigate('article', slug)}
               />
             </div>
-          )}
         </div>
       </section>
     </div>

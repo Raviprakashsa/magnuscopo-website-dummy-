@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Lightbulb, Users, GraduationCap, Building2, TrendingUp, Target, Briefcase, ChevronDown } from 'lucide-react';
+import { Lightbulb, Users, TrendingUp, Target, Briefcase, ChevronDown } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 const reasons = [
@@ -181,7 +181,7 @@ export default function WhyChooseMagnusCopo() {
 
           {/* Mobile Dropdown Cards */}
           <div className="lg:hidden space-y-3">
-            {reasons.map((reason, index) => {
+            {reasons.map((reason) => {
               const Icon = reason.icon;
               const isExpanded = activeCard === reason.id;
               return (

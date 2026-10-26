@@ -1,39 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Cpu, BarChart3, Code2, Shield, Rocket, TrendingUp } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
-
-const features = [
-  {
-    icon: Cpu,
-    title: 'AI-Powered LMS',
-    description: 'Intelligent learning management with personalized pathways and adaptive content delivery.',
-  },
-  {
-    icon: BarChart3,
-    title: 'Real-Time Analytics',
-    description: 'Comprehensive dashboards tracking performance, engagement, and learning outcomes.',
-  },
-  {
-    icon: Code2,
-    title: 'Coding Ecosystem',
-    description: '4500+ DSA problems, live contests, and hands-on programming challenges.',
-  },
-  {
-    icon: Shield,
-    title: 'AI-Proctored Assessments',
-    description: 'Secure, automated proctoring with advanced fraud detection and integrity monitoring.',
-  },
-  {
-    icon: Rocket,
-    title: 'Skill Development',
-    description: 'Industry-aligned training programs with certification and competency tracking.',
-  },
-  {
-    icon: TrendingUp,
-    title: 'Placement Outcomes',
-    description: 'End-to-end placement ecosystem connecting talent with opportunities.',
-  },
-];
 
 export default function WhyChooseUs() {
   const { theme } = useTheme();

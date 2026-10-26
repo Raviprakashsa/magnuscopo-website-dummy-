@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Brain, BarChart, Target, Code, Trophy, Users, Zap, Award, Cpu, Shield, TrendingUp, Lightbulb, Building2, ChevronDown } from 'lucide-react';
+import { Brain, BarChart, Target, Trophy, Zap, Award, Shield, Lightbulb, Building2, ChevronDown } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 const features = [
@@ -209,7 +209,7 @@ export default function CollegesPage() {
                   { name: 'Cognizant', logo: '/cognizant.svg' },
                   { name: 'Google', logo: '/google.svg' },
                   { name: 'IBM', logo: '/IBM.svg' }
-                ].map((company, index) => (
+                ].map((company) => (
                   <div
                     key={company.name}
                     className="group relative transition-all duration-300 ease-out"
@@ -251,7 +251,7 @@ export default function CollegesPage() {
                     { name: 'Cognizant', logo: '/cognizant.svg' },
                     { name: 'Google', logo: '/google.svg' },
                     { name: 'IBM', logo: '/IBM.svg' }
-                  ].map((company, index) => (
+                  ].map((company) => (
                     <div key={`first-${company.name}`} className="flex-shrink-0">
                       <div className={`w-20 h-16 p-1 rounded-xl backdrop-blur-sm ${
                         theme === 'light'
@@ -278,7 +278,7 @@ export default function CollegesPage() {
                     { name: 'Cognizant', logo: '/cognizant.svg' },
                     { name: 'Google', logo: '/google.svg' },
                     { name: 'IBM', logo: '/IBM.svg' }
-                  ].map((company, index) => (
+                  ].map((company) => (
                     <div key={`second-${company.name}`} className="flex-shrink-0">
                       <div className={`w-20 h-16 p-1 rounded-xl backdrop-blur-sm ${
                         theme === 'light'
@@ -309,7 +309,7 @@ export default function CollegesPage() {
                   { name: 'SAP', logo: '/SAP.svg' },
                   { name: 'TATA', logo: '/TATA.svg' },
                   { name: 'ZOHO', logo: '/ZOHO.svg' }
-                ].map((company, index) => (
+                ].map((company) => (
                   <div
                     key={company.name}
                     className="group relative transition-all duration-300 ease-out"
@@ -351,7 +351,7 @@ export default function CollegesPage() {
                     { name: 'SAP', logo: '/SAP.svg' },
                     { name: 'TATA', logo: '/TATA.svg' },
                     { name: 'ZOHO', logo: '/ZOHO.svg' }
-                  ].map((company, index) => (
+                  ].map((company) => (
                     <div key={`first-${company.name}`} className="flex-shrink-0">
                       <div className={`w-20 h-16 p-1 rounded-xl backdrop-blur-sm ${
                         theme === 'light'
@@ -378,7 +378,7 @@ export default function CollegesPage() {
                     { name: 'SAP', logo: '/SAP.svg' },
                     { name: 'TATA', logo: '/TATA.svg' },
                     { name: 'ZOHO', logo: '/ZOHO.svg' }
-                  ].map((company, index) => (
+                  ].map((company) => (
                     <div key={`second-${company.name}`} className="flex-shrink-0">
                       <div className={`w-20 h-16 p-1 rounded-xl backdrop-blur-sm ${
                         theme === 'light'
@@ -609,7 +609,7 @@ export default function CollegesPage() {
 
             {/* Mobile Dropdown Cards */}
             <div className="lg:hidden space-y-3">
-              {whyChooseReasons.map((reason, index) => {
+              {whyChooseReasons.map((reason) => {
                 const Icon = reason.icon;
                 const isExpanded = activeCard === reason.id;
                 return (

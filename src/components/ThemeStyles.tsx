@@ -1,8 +1,4 @@
-import { useTheme } from '../context/ThemeContext';
-
 export default function ThemeStyles() {
-  const { theme } = useTheme();
-
   return (
     <style>
       {`

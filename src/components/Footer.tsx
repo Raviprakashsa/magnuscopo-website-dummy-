@@ -54,12 +54,16 @@ export default function Footer({ onNavigate }: FooterProps) {
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.value}>
-                  <button
-                    onClick={() => onNavigate(link.value)}
+                  <a
+                    href={link.value === 'home' ? '/' : `/${link.value}/`}
+                    onClick={(event) => {
+                      event.preventDefault();
+                      onNavigate(link.value);
+                    }}
                     className={`transition-colors duration-300 ${theme === 'dark' ? 'text-gray-400 hover:text-[#14F4FF]' : 'text-gray-600 hover:text-[#2D8CFF]'}`}
                   >
                     {link.label}
-                  </button>
+                  </a>
                 </li>
               ))}
             </ul>
