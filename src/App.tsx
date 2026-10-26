@@ -11,6 +11,7 @@ import ContactPage from './pages/ContactPage';
 import BlogPage from './pages/BlogPage';
 import BlogArticlePage from './pages/BlogArticlePage';
 import { useTheme } from './context/ThemeContext';
+import { MessageCircle } from 'lucide-react';
 
 function App() {
   const { theme } = useTheme();
@@ -72,6 +73,16 @@ function App() {
           <div className="h-screen" />
         </div>
       </div>
+      <a
+        href="https://wa.me/+917899899691"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Chat with us on WhatsApp"
+        title="Chat with us on WhatsApp"
+        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform duration-300 hover:scale-110 hover:bg-[#20BD5A] focus:outline-none focus:ring-4 focus:ring-[#25D366]/40"
+      >
+        <MessageCircle className="h-7 w-7" aria-hidden="true" />
+      </a>
     </div>
   );
 }
