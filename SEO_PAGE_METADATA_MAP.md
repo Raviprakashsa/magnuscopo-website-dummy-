@@ -1,6 +1,10 @@
 # SEO page metadata map
 
-Canonical base: `https://the360connect.com/`
+The production canonical base is `https://magnuscopo.com/`. The public dummy
+domain `https://the360connect.com/` is staging-only and remains
+`noindex,follow`. Production metadata uses `VITE_SITE_URL` only when it
+matches `VITE_PRODUCTION_URL` and indexing is enabled by the production build
+variables.
 
 | Path | Title | Indexability | H1/content |
 |---|---|---|---|
@@ -14,4 +18,3 @@ Canonical base: `https://the360connect.com/`
 | `/contact/` | Contact Magnus Copo | Index | Contact H1 |
 
 Article titles, descriptions, images, and publication dates are read from `src/data/blog-posts.json` at runtime.
-

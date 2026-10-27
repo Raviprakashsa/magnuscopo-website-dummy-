@@ -46,6 +46,11 @@ const pageMetadata = {
     description: 'Contact Magnus Copo for EdTech, hiring, corporate training, digital solutions, and business enquiries.',
     path: '/contact/',
   },
+  notFound: {
+    title: 'Page Not Found | Magnus Copo',
+    description: 'The requested Magnus Copo page could not be found.',
+    path: '/',
+  },
 };
 
 function getRouteFromLocation() {
@@ -110,6 +115,14 @@ function App() {
         image: article?.featured_image,
         publishedTime: article?.created_at,
         indexable: Boolean(article),
+      });
+      return;
+    }
+    if (currentPage === 'not-found') {
+      updateSeoMetadata({
+        ...pageMetadata.notFound,
+        path: `${window.location.pathname.replace(/\/+$/, '') || '/'}/`,
+        indexable: false,
       });
       return;
     }

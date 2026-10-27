@@ -1,4 +1,12 @@
-export const SITE_URL = 'https://the360connect.com';
+import { resolveSiteConfig } from '../../site.config';
+
+export const SITE_CONFIG = resolveSiteConfig({
+  VITE_SITE_ENV: import.meta.env.VITE_SITE_ENV,
+  VITE_SITE_URL: import.meta.env.VITE_SITE_URL,
+  VITE_ALLOW_INDEXING: import.meta.env.VITE_ALLOW_INDEXING,
+  VITE_PRODUCTION_URL: import.meta.env.VITE_PRODUCTION_URL,
+});
+export const SITE_URL = SITE_CONFIG.siteUrl;
 export const SITE_NAME = 'Magnus Copo';
 export const DEFAULT_SOCIAL_IMAGE = `${SITE_URL}/MagnusCOPO_Light.svg`;
 
@@ -39,7 +47,8 @@ export function updateSeoMetadata(metadata: SeoMetadata) {
   document.title = metadata.title;
   document.documentElement.lang = 'en-IN';
   setMeta('name', 'description', metadata.description);
-  setMeta('name', 'robots', metadata.indexable === false ? 'noindex,follow' : 'index,follow');
+  const indexable = SITE_CONFIG.allowIndexing && metadata.indexable !== false;
+  setMeta('name', 'robots', indexable ? 'index,follow' : 'noindex,follow');
   setCanonical(canonicalUrl);
   setMeta('property', 'og:title', metadata.title);
   setMeta('property', 'og:description', metadata.description);

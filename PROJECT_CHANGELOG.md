@@ -259,7 +259,24 @@ The following require Hostinger, Cloudflare, or external account access:
 - Review blog author names and numerical claims.
 - Provide a dedicated 1200x630 social preview image if the existing SVG logo is not suitable for social platforms.
 
+## 9. Environment-aware SEO configuration and production correction
+
+After the initial SEO work, hard-coded canonical-domain behavior was replaced with a shared build-time configuration:
+
+- [site.config.ts](./site.config.ts) resolves the environment, site URL, and indexing permission.
+- `.env.example` documents safe staging and explicit production values.
+- `vite.config.ts` generates `robots.txt` and `sitemap.xml` for the selected build environment.
+- The Vite build emits route-specific static HTML documents for the indexable routes, so crawlers can read page-specific metadata before JavaScript executes.
+- Staging defaults to `noindex,follow` and an empty sitemap.
+- Production indexing is allowed only for `VITE_SITE_ENV=production`, `VITE_ALLOW_INDEXING=true`, an HTTPS `VITE_SITE_URL`, and a matching `VITE_PRODUCTION_URL`.
+- Production is configured for `https://magnuscopo.com`; the current dummy domain `https://the360connect.com/` remains staging-only with `noindex,follow`.
+- Runtime SEO now receives `VITE_PRODUCTION_URL`, matching the build-time validation.
+- Unknown client-side routes receive `noindex,follow` after React loads, but a true HTTP 404 still requires server configuration.
+- Robots continues to allow crawling so search engines can read the `noindex` directive.
+- Static hard-coded `public/robots.txt` and `public/sitemap.xml` files were removed to avoid stale URLs.
+
+The WhatsApp URL and Pexels image URLs remain intentional third-party URLs, not canonical-domain configuration.
+
 ## Final status
 
 The repository is technically validated and ready for review/staging deployment. It is not possible to confirm production deployment until the latest `dist/` output is uploaded to Hostinger or an active Hostinger Git deployment is configured.
-
