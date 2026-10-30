@@ -47,6 +47,21 @@ export default function Footer({ onNavigate }: FooterProps) {
                 our execution
               </span>
             </p>
+            <div className="mt-6">
+              <p className={`mb-2 text-xs font-semibold uppercase tracking-[0.18em] ${
+                theme === 'dark' ? 'text-gray-500' : 'text-gray-500'
+              }`}>
+                Verified partner
+              </p>
+              <img
+                src={theme === 'dark' ? '/hostinger-partner-badge-dark.svg' : '/hostinger-partner-badge-light.svg'}
+                alt="Hostinger Partner"
+                width="160"
+                height="60"
+                loading="lazy"
+                className="h-auto w-40"
+              />
+            </div>
           </div>
 
           <div>
